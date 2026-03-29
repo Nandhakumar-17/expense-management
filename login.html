@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <div class="login-header">
+            <!-- Simple SVG Icon for logo -->
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="5" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="2" y1="10" x2="22" y2="10"></line>
+            </svg>
+            <h2>Welcome Back</h2>
+            <p>Please enter your PIN to access your Expense Tracker</p>
+        </div>
+        <form id="login-form">
+            <div class="form-control">
+                <label for="pin">Security PIN (Default: 1234)</label>
+                <input type="password" id="pin" placeholder="Enter PIN" required autocomplete="off">
+            </div>
+            <p id="error-msg" class="error-msg"></p>
+            <button type="submit" class="btn btn-primary block-btn">Access Tracker</button>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
